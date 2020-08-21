@@ -12,8 +12,9 @@ CrystalGraphs.fcc(2, [0,0,0,'black'], [.25,.25,.25,'blue'])
 CrystalGraphs.show()
 ```
 
+The number 2 specifies the number of times the unit cell will be repeated in the x, y, and z directions, and the other two arguments specify the basis of the lattice along with a color for the points. A demonstration of the output is below.
 
-The number 2 specifies the number of times the unit cell will be repeated in the x, y, and z directions, and the other two arguments specify the basis of the lattice along with a color for the points.
+<img src="Example.gif" width="45%" title="Snell's Law"/>
 
 ## REQUIREMENTS:
 

@@ -58,7 +58,7 @@ def hexagonal(n, height_ratio, *args):
                    c=basis[3], alpha=alpha, s=size)
 
 
-# Thank you stack exchange for this solution
+# The function below is not my code; thank you stack overflow for this solution
 # https://stackoverflow.com/questions/13685386/matplotlib-equal-unit-length-with-equal-aspect-ratio-z-axis-is-not-equal-to
 # User: karlo
 def set_axes_equal(ax):

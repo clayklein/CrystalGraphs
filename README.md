@@ -4,7 +4,7 @@ A tool for graphing multiple repetitions of the 3D Bravais lattices with a basis
 
 Images of the 3D Bravais lattices are easy to find, but I have not been able to find a simple method for viewing a 3D graph of many repetitions of the Bravais lattices with a specified basis. This module is a work in progress and currently allows for easily graphing the cubic, fcc, bcc, tetragonal, tetragonal body centered, and hexagonal crystal lattices.
 
-As a quick example, using this module the crystal structure for diamond can be graphed in matplotlib by typing:
+As a quick example, using this module the crystal structure for diamond can be graphed in matplotlib by running the following code:
 
 ```
 import CrystalGraphs

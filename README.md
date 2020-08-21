@@ -12,7 +12,7 @@ CrystalGraphs.fcc(2, [0,0,0,'black'], [.25,.25,.25,'blue'])
 CrystalGraphs.show()
 ```
 
-The number 2 specifies the number of times the unit cell will be repeated in the x, y, and z directions, and the other two arguments specify the basis of the lattice along with a color for the points. A demonstration of the output is below; on the left is the out of the code above, and on the right is the output of the code above with 3 instead of 2.
+The number 2 specifies the number of times the unit cell will be repeated in the x, y, and z directions, and the other two arguments specify the basis of the lattice along with a color for the points. A demonstration of the output is below; on the left is the output of the code above, and on the right is the output of the code above with 3 repetitions instead of 2.
 
 <img src="Example.gif" width="45%" title="Diamond"/> <img src="Example2.gif" width="45%" title="Diamond"/>
 

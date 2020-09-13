@@ -8,26 +8,37 @@ As a quick example, using this module the crystal structure for diamond can be g
 
 ```
 import CrystalGraphs
-CrystalGraphs.fcc(2, [0,0,0,'black'], [.25,.25,.25,'blue'])
+CrystalGraphs.fcc(2, [0,0,0,'white'], [.25,.25,.25,'cyan'], draw_path=True)
 CrystalGraphs.show()
 ```
 
-The number 2 specifies the number of times the unit cell will be repeated in the x, y, and z directions, and the other two arguments specify the basis of the lattice along with a color for the points. A demonstration of the output is below; on the left is the output of the code above, and on the right is the output of the code above with 3 repetitions instead of 2.
+The number 2 specifies the number of times the unit cell will be repeated in the x, y, and z directions, and the next two arguments specify the basis of the lattice along with a color for the points. The `draw_path` argument is an optional feature that will trace the path to all points after the first one along the lattice vectors. A demonstration of the output is below.
 
-<img src="Example.gif" width="45%" title="Diamond"/> <img src="Example2.gif" width="45%" title="Diamond"/>
+Another example is the following:
 
-## REQUIREMENTS:
+```
+import CrystalGraphs
+CrystalGraphs.hexagonal(2, 1.633, [0,0,0,'white'], [2/3, 1/3, 1.633/2, 'cyan'], draw_path=True)
+CrystalGraphs.show()
+```
+
+The output is the hexagonal close packed structure.
+
+<img src="Diamond.gif" width="45%" title="Diamond"/> <img src="hcp.gif" width="45%" title="hcp"/>
+
+## Requirements:
 
 - matplotlib and NumPy must be installed.
 
-## FUNCTIONS:
+## Functions:
 
 ### Cubic
 Graphs a cubic crystal with the specified basis.
 
-`cubic(n, *args)`
+`cubic(n, *args, draw_path=False)`
 - `n`: The number of times the unit cell will be repeated in the x, y, and z directions
 - `*args`: The basis in the format `[a, b, c, 'color']` where `'color'` species the color the points will have
+- `draw_path`: Shows the path for a basis points exluding the first one if set to `True`
 
 ### fcc
 Graphs a fcc crystal structure with the specified basis.
@@ -35,6 +46,7 @@ Graphs a fcc crystal structure with the specified basis.
 `fcc(n, *args)`
 - `n`: The number of times the unit cell will be repeated in the x, y, and z directions
 - `*args`: The basis in the format `[a, b, c, 'color']` where `'color'` species the color the points will have
+- `draw_path`: Shows the path for a basis points exluding the first one if set to `True`
 
 ### bcc
 Graphs a bcc crystal structure with the specified basis.
@@ -42,6 +54,7 @@ Graphs a bcc crystal structure with the specified basis.
 `bcc(n, *args)`
 - `n`: The number of times the unit cell will be repeated in the x, y, and z directions
 - `*args`: The basis in the format `[a, b, c, 'color']` where `'color'` species the color the points will have
+- `draw_path`: Shows the path for a basis points exluding the first one if set to `True`
 
 ### Tetragonal
 Graphs a tetragonal crystal structure with the specified basis.
@@ -50,6 +63,7 @@ Graphs a tetragonal crystal structure with the specified basis.
 - `n`: The number of times the unit cell will be repeated in the x, y, and z directions
 - `height_ratio`: The ratio of the longer side to the two equal shorter sides; c/a
 - `*args`: The basis in the format `[a, b, c, 'color']` where `'color'` species the color the points will have
+- `draw_path`: Shows the path for a basis points exluding the first one if set to `True`
 
 ### Tetragonal Body Centered
 Graphs a tetragonal body centered crystal structure with the specified basis.
@@ -58,6 +72,7 @@ Graphs a tetragonal body centered crystal structure with the specified basis.
 - `n`: The number of times the unit cell will be repeated in the x, y, and z directions
 - `height_ratio`: The ratio of the longer side to the two equal shorter sides; c/a
 - `*args`: The basis in the format `[a, b, c, 'color']` where `'color'` species the color the points will have
+- `draw_path`: Shows the path for a basis points exluding the first one if set to `True`
 
 ### Hexagonal
 Graphs a hexagonal crystal structure with the specified basis.
@@ -66,3 +81,4 @@ Graphs a hexagonal crystal structure with the specified basis.
 - `n`: The number of times the unit cell will be repeated in the x, y, and z directions
 - `height_ratio`: The ratio of the longer side to the two equal shorter sides; c/a
 - `*args`: The basis in the format `[a, b, c, 'color']` where `'color'` species the color the points will have
+- `draw_path`: Shows the path for a basis points exluding the first one if set to `True`

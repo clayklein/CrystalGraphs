@@ -12,7 +12,7 @@ CrystalGraphs.fcc(2, [0,0,0,'white'], [.25,.25,.25,'cyan'], draw_path=True)
 CrystalGraphs.show()
 ```
 
-The number 2 specifies the number of times the unit cell will be repeated in the x, y, and z directions, and the next two arguments specify the basis of the lattice along with a color for the points. The `draw_path` argument is an optional feature that will trace the path to all points after the first one along the lattice vectors. A demonstration of the output is below.
+The number 2 specifies the number of times the unit cell will be repeated in the x, y, and z directions (note that this number does not need to be 2; it could be any number from 1 up to the highest number your computer can handle, which is the entire idea behind this module), and the next two arguments specify the basis of the lattice along with a color for the points. The `draw_path` argument is an optional feature that will trace the path to all basis points after the first one along the lattice vectors. A demonstration of the output is below.
 
 Another example is the following:
 

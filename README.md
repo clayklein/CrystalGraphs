@@ -22,7 +22,7 @@ CrystalGraphs.hexagonal(2, 1.633, [0,0,0,'white'], [2/3, 1/3, 1.633/2, 'cyan'], 
 CrystalGraphs.show()
 ```
 
-The output is the hexagonal close packed structure.
+The output is the hexagonal close packed structure shown on the right.
 
 <img src="Diamond.gif" width="45%" title="Diamond"/> <img src="hcp.gif" width="45%" title="hcp"/>
 

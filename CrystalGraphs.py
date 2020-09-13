@@ -5,7 +5,6 @@ import itertools
 # use all_basis instead of args in the islice part of the function
 
 size = 50
-marker = 'o'
 
 plt.rcParams['grid.color'] = '#252525'
 

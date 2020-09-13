@@ -26,6 +26,19 @@ The output is the hexagonal close packed structure.
 
 <img src="Diamond.gif" width="45%" title="Diamond"/> <img src="hcp.gif" width="45%" title="hcp"/>
 
+Here is another one for fun that is close to my computer's limit. The picture below shows 30 repetitions of the hcp lattice in all directions; each individual point is plotted.
+
+<img src="hcp_30.png" width="45%" title="hcp"/> 
+
+The code used to generate it is:
+
+```
+import CrystalGraphs
+CrystalGraphs.size = .1
+CrystalGraphs.hexagonal(30, 1.633, [0, 0, 0, 'white'], [2/3, 1/3, 1.633/2, 'cyan'], draw_path=True)
+CrystalGraphs.show()
+```
+
 ## Requirements:
 
 - matplotlib and NumPy must be installed.

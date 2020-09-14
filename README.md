@@ -26,7 +26,7 @@ The output is the hexagonal close packed structure shown on the right.
 
 <img src="Diamond.gif" width="45%" title="Diamond"/> <img src="hcp.gif" width="45%" title="hcp"/>
 
-Here is another one for fun. The picture below shows 30 repetitions of the hcp lattice in all directions; each individual point is plotted.
+Here is another one for fun. The picture below shows 30 repetitions of the hcp unit cell in all directions; each individual point is plotted.
 
 <img src="hcp_30.png" width="45%" title="hcp"/> 
 

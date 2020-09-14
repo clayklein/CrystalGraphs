@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 import itertools
-# use all_basis instead of args in the islice part of the function
 
 size = 50
 

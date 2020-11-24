@@ -56,7 +56,7 @@ Graphs a cubic crystal with the specified basis.
 ### fcc
 Graphs a fcc crystal structure with the specified basis.
 
-`fcc(n, *args)`
+`fcc(n, *args, draw_path=False)`
 - `n`: The number of times the unit cell will be repeated in the x, y, and z directions
 - `*args`: The basis in the format `[a, b, c, 'color']` where `'color'` species the color the points will have
 - `draw_path`: Shows the path for a basis points exluding the first one if set to `True`
@@ -64,7 +64,7 @@ Graphs a fcc crystal structure with the specified basis.
 ### bcc
 Graphs a bcc crystal structure with the specified basis.
 
-`bcc(n, *args)`
+`bcc(n, *args, draw_path=False)`
 - `n`: The number of times the unit cell will be repeated in the x, y, and z directions
 - `*args`: The basis in the format `[a, b, c, 'color']` where `'color'` species the color the points will have
 - `draw_path`: Shows the path for a basis points exluding the first one if set to `True`
@@ -72,7 +72,7 @@ Graphs a bcc crystal structure with the specified basis.
 ### Tetragonal
 Graphs a tetragonal crystal structure with the specified basis.
 
-`tetragonal(n, height_ratio, *args)`
+`tetragonal(n, height_ratio, *args, draw_path=False)`
 - `n`: The number of times the unit cell will be repeated in the x, y, and z directions
 - `height_ratio`: The ratio of the longer side to the two equal shorter sides; c/a
 - `*args`: The basis in the format `[a, b, c, 'color']` where `'color'` species the color the points will have
@@ -81,7 +81,7 @@ Graphs a tetragonal crystal structure with the specified basis.
 ### Tetragonal Body Centered
 Graphs a tetragonal body centered crystal structure with the specified basis.
 
-`tetragonal_bc(n, height_ratio, *args)`
+`tetragonal_bc(n, height_ratio, *args, draw_path=False)`
 - `n`: The number of times the unit cell will be repeated in the x, y, and z directions
 - `height_ratio`: The ratio of the longer side to the two equal shorter sides; c/a
 - `*args`: The basis in the format `[a, b, c, 'color']` where `'color'` species the color the points will have
@@ -90,7 +90,7 @@ Graphs a tetragonal body centered crystal structure with the specified basis.
 ### Hexagonal
 Graphs a hexagonal crystal structure with the specified basis.
 
-`hexagonal(n, height_ratio, *args)`
+`hexagonal(n, height_ratio, *args, draw_path=False)`
 - `n`: The number of times the unit cell will be repeated in the x, y, and z directions
 - `height_ratio`: The ratio of the longer side to the two equal shorter sides; c/a
 - `*args`: The basis in the format `[a, b, c, 'color']` where `'color'` species the color the points will have
